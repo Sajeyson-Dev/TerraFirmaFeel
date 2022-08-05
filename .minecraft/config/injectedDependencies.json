@@ -1,0 +1,135 @@
+[
+  {
+    "modId": "TFC-Tweaks",
+    "deps": [
+      {
+        "type": "after",
+        "target": "terrafirmacraft"
+      },
+      {
+        "type": "before",
+        "target": "bspkrsCore"
+      },
+      {
+        "type": "before",
+        "target": "ArmorStatusHUD"
+      },
+      {
+        "type": "before",
+        "target": "StatusEffectHUD"
+      },
+      {
+        "type": "before",
+        "target": "bookshelf"
+      },
+      {
+        "type": "before",
+        "target": "betterboat"
+      },
+      {
+        "type": "before",
+        "target": "BlockProperties"
+      },
+      {
+        "type": "before",
+        "target": "BNBGamingLib"
+      },
+      {
+        "type": "before",
+        "target": "CarpentersBlocks"
+      },
+      {
+        "type": "before",
+        "target": "ChickenChunks"
+      },
+      {
+        "type": "before",
+        "target": "CleanView"
+      },
+      {
+        "type": "before",
+        "target": "controlling"
+      },
+      {
+        "type": "before",
+        "target": "MineTweaker3"
+      },
+      {
+        "type": "before",
+        "target": "defaultkeys"
+      },
+      {
+        "type": "before",
+        "target": "Ding"
+      },
+      {
+        "type": "before",
+        "target": "dsurround"
+      },
+      {
+        "type": "before",
+        "target": "Waila"
+      },
+      {
+        "type": "before",
+        "target": "FTBL"
+      },
+      {
+        "type": "before",
+        "target": "FTBU"
+      },
+      {
+        "type": "before",
+        "target": "InGameModConfigs"
+      },
+      {
+        "type": "before",
+        "target": "inventorytweaks"
+      },
+      {
+        "type": "before",
+        "target": "itemscroller"
+      },
+      {
+        "type": "before",
+        "target": "itlt"
+      },
+      {
+        "type": "before",
+        "target": "journeymap"
+      },
+      {
+        "type": "before",
+        "target": "testdummy"
+      },
+      {
+        "type": "before",
+        "target": "Neat"
+      },
+      {
+        "type": "before",
+        "target": "ResourceLoader"
+      },
+      {
+        "type": "before",
+        "target": "soundfilters"
+      },
+      {
+        "type": "before",
+        "target": "TerraFirmaCraftNEIplugin"
+      },
+      {
+        "type": "before",
+        "target": "Triumph"
+      },
+      {
+        "type": "before",
+        "target": "WailaHarvestability"
+      },
+      {
+        "type": "before",
+        "target": "wawla"
+      }
+    ]
+  }
+]

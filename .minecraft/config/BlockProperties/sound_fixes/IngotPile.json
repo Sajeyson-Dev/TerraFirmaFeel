@@ -1,0 +1,10 @@
+{
+  "_name": "terrafirmacraft:IngotPile",
+  "stats": {
+    "sound": "metal"
+  },
+  "break_speed": [],
+  "drops": [],
+  "harvest": [],
+  "xp": []
+}

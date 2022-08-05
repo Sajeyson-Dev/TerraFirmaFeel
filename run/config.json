@@ -1,0 +1,15 @@
+{
+    "mmcPath": "A:\\MultiMC\\MultiMC.exe",
+    "instanceName": "TerraFirmaFeel",
+    "mcVersion": "1.7.10",
+    "forgeVersion": "10.13.4.1614",
+    "logType": null,
+    "foldersToRemove" : [
+        "backups",
+        "crash-reports",
+        "journeymap/data",
+        "logs",
+        "saves",
+        "screenshots"
+    ]
+}

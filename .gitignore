@@ -15,6 +15,7 @@ mmc-pack.json
 /.minecraft/journeymap/*.json
 /.minecraft/journeymap/*.html
 /.minecraft/logs/
+/.minecraft/modpack/
 /.minecraft/mods
 /.minecraft/resourcepacks/
 /.minecraft/saves/

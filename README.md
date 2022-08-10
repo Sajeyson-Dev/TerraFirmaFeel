@@ -1,5 +1,5 @@
 # TerraFirmaFeel
-Classic TerraFirmaCraft gameplay with tweaks and fixes!
+Original TerraFirmaCraft gameplay with tweaks and fixes!
  
 # Modlist
 - ArmorStatusHUD

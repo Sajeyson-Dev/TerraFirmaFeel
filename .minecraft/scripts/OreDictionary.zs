@@ -35,3 +35,7 @@ for item in <minecraft:dye:*>.items {
     <ore:dyeMagenta>.remove(item);
     <ore:dyeOrange>.remove(item);
 }
+
+for item in <minecraft:planks:*>.items {
+    <ore:plankWood>.remove(item);
+}

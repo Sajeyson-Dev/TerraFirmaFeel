@@ -1,4 +1,6 @@
 
+item.dyePowder.light_blue.name=Light Blue Dye
+
 entity.betterboat.betterBoat.name=Boat
 entity.MinecartRideable.name=Minecart
 entity.LeashKnot.name=Rope

@@ -15,10 +15,27 @@ global thatch                               as IItemStack = <terrafirmacraft:Tha
 global ironSheet                            as IItemStack = <terrafirmacraft:item.Wrought Iron Double Sheet>;
 global hammerHead                           as IItemStack = <terrafirmacraft:item.Wrought Iron Hammer Head>;
 global chiselHead                           as IItemStack = <terrafirmacraft:item.Wrought Iron Chisel Head>;
+global boneMeal                             as IItemStack = <terrafirmacraft:item.dyePowder:15>;
+global inkSac                               as IItemStack = <terrafirmacraft:item.dyePowder>;
+global cocoaBeans                           as IItemStack = <terrafirmacraft:item.dyePowder:3>;
 
 global log                                  as IOreDictEntry = <ore:logWood>;
 global lumber                               as IOreDictEntry = <ore:woodLumber>;
 global cloth                                as IOreDictEntry = <ore:materialCloth>;
+
+global redDye                               as IItemStack = <terrafirmacraft:item.dyePowder:1>;
+global greenDye                             as IItemStack = <terrafirmacraft:item.dyePowder:2>;
+global blueDye                              as IItemStack = <terrafirmacraft:item.dyePowder:4>;
+global purpleDye                            as IItemStack = <terrafirmacraft:item.dyePowder:5>;
+global cyanDye                              as IItemStack = <terrafirmacraft:item.dyePowder:6>;
+global lighGrayDye                          as IItemStack = <terrafirmacraft:item.dyePowder:7>;
+global grayDye                              as IItemStack = <terrafirmacraft:item.dyePowder:8>;
+global pinkDye                              as IItemStack = <terrafirmacraft:item.dyePowder:9>;
+global limeDye                              as IItemStack = <terrafirmacraft:item.dyePowder:10>;
+global yellowDye                            as IItemStack = <terrafirmacraft:item.dyePowder:11>;
+global lighBlueDye                          as IItemStack = <terrafirmacraft:item.dyePowder:12>;
+global magentaDye                           as IItemStack = <terrafirmacraft:item.dyePowder:13>;
+global orangeDye                            as IItemStack = <terrafirmacraft:item.dyePowder:14>;
 
 global carpet                               as IItemStack = <minecraft:carpet>;
 global itemFrame                            as IItemStack = <minecraft:item_frame>;
@@ -227,6 +244,8 @@ remove([
     <minecraft:stick>,
     <minecraft:sticky_piston>,
     <minecraft:stone>,
+    <minecraft:stone_button>,
+    <minecraft:stone_pressure_plate>,
     <minecraft:stone_axe>,
     <minecraft:stone_brick_stairs>,
     <minecraft:stone_hoe>,
@@ -313,3 +332,17 @@ addShaped(horseArmor, [
 addShapeless(stick * 2, [lumber, axe.transformDamage()]);
 addShapeless(book, [paper, paper, paper, leather]);
 addShapeless(carpentersBlocks * 3, [saw.transformDamage(), lumber, lumber, lumber]);
+
+/*
+    Dyes
+*/
+
+addShapeless(cyanDye * 2, [greenDye, blueDye]);
+addShapeless(grayDye * 2, [inkSac, boneMeal]);
+addShapeless(lighBlueDye * 2, [boneMeal, blueDye]);
+addShapeless(lighGrayDye * 2, [boneMeal, grayDye]);
+addShapeless(limeDye * 2, [greenDye, boneMeal]);
+addShapeless(magentaDye * 2, [redDye, blueDye, pinkDye]);
+addShapeless(orangeDye * 2, [yellowDye, redDye]);
+addShapeless(pinkDye * 2, [boneMeal, redDye]);
+addShapeless(purpleDye * 2, [blueDye, redDye]);

@@ -1,5 +1,9 @@
 import minetweaker.oredict.IOreDictEntry;
 
+/*
+    Author: Sajeyson
+*/
+
 <ore:stone>.remove(<minecraft:stone>);
 <ore:cobblestone>.remove(<minecraft:cobblestone>);
 <ore:stickWood>.remove(<minecraft:stick>);

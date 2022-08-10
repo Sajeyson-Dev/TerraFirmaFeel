@@ -1,6 +1,6 @@
 {
   "ftbl": {
-    "item_ore_names": true,
+    "item_ore_names": false,
     "item_reg_names": false,
     "notifications": "screen",
     "player_options_shortcut": true,
@@ -19,7 +19,7 @@
   },
   "sidebar_buttons": {
     "ftbu.claimed_chunks": false,
-    "ftbu.guide": true,
+    "ftbu.guide": false,
     "ftbu.server_info": false
   }
 }

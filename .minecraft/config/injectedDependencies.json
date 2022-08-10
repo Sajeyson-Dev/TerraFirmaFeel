@@ -40,10 +40,6 @@
       },
       {
         "type": "before",
-        "target": "ChickenChunks"
-      },
-      {
-        "type": "before",
         "target": "CleanView"
       },
       {
@@ -53,6 +49,10 @@
       {
         "type": "before",
         "target": "MineTweaker3"
+      },
+      {
+        "type": "before",
+        "target": "CustomMainMenu"
       },
       {
         "type": "before",
@@ -68,6 +68,10 @@
       },
       {
         "type": "before",
+        "target": "endercore"
+      },
+      {
+        "type": "before",
         "target": "Waila"
       },
       {
@@ -77,10 +81,6 @@
       {
         "type": "before",
         "target": "FTBU"
-      },
-      {
-        "type": "before",
-        "target": "InGameModConfigs"
       },
       {
         "type": "before",
@@ -100,11 +100,11 @@
       },
       {
         "type": "before",
-        "target": "testdummy"
+        "target": "Neat"
       },
       {
         "type": "before",
-        "target": "Neat"
+        "target": "Netherless"
       },
       {
         "type": "before",

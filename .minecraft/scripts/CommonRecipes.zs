@@ -4,35 +4,39 @@ import minetweaker.oredict.IOreDictEntry;
 import mods.nei.NEI;
 
 /*
-    Stuff
+    Author: Sajeyson
 */
 
 global stick                                as IItemStack = <terrafirmacraft:item.stick>;
 global paper                                as IItemStack = <minecraft:paper>;
 global leather                              as IItemStack = <terrafirmacraft:item.TFC Leather>;
 global coal                                 as IItemStack = <terrafirmacraft:item.coal>;
-
-global lumber                               as IOreDictEntry = <ore:woodLumber>;
-global cloth                                as IOreDictEntry = <ore:materialCloth>;
-
+global thatch                               as IItemStack = <terrafirmacraft:Thatch>;
+global ironSheet                            as IItemStack = <terrafirmacraft:item.Wrought Iron Double Sheet>;
 global hammerHead                           as IItemStack = <terrafirmacraft:item.Wrought Iron Hammer Head>;
 global chiselHead                           as IItemStack = <terrafirmacraft:item.Wrought Iron Chisel Head>;
+
+global log                                  as IOreDictEntry = <ore:logWood>;
+global lumber                               as IOreDictEntry = <ore:woodLumber>;
+global cloth                                as IOreDictEntry = <ore:materialCloth>;
 
 global carpet                               as IItemStack = <minecraft:carpet>;
 global itemFrame                            as IItemStack = <minecraft:item_frame>;
 global painting                             as IItemStack = <minecraft:painting>;
-global coalBlock                           as IItemStack = <minecraft:coal_block>;
+global coalBlock                            as IItemStack = <minecraft:coal_block>;
 global book                                 as IItemStack = <minecraft:book>;
 global bookshelf                            as IItemStack = <terrafirmacraft:Bookshelf>;
 global boat                                 as IItemStack = <minecraft:boat>;
 global carpentersBlocks                     as IItemStack = <CarpentersBlocks:blockCarpentersBlock>;
 global carpentersBed                        as IItemStack = <CarpentersBlocks:itemCarpentersBed>;
-
 global carpentersHammer                     as IItemStack = <CarpentersBlocks:itemCarpentersHammer>;
 global carpentersChisel                     as IItemStack = <CarpentersBlocks:itemCarpentersChisel>;
+global horseArmor                           as IItemStack = <minecraft:iron_horse_armor>;
 
 global saw                                  as IOreDictEntry = <ore:itemSaw>;
 global axe                                  as IOreDictEntry = <ore:itemAxe>;
+global hammer                               as IOreDictEntry = <ore:itemHammer>;
+global chisel                               as IOreDictEntry = <ore:itemChisel>;
 
 /*
     Functions
@@ -70,10 +74,10 @@ remove([
     coalBlock,
     book,
     boat,
-    carpentersHammer,
-    carpentersChisel,
     carpentersBlocks,
-    carpentersBed
+    carpentersBed,
+    carpentersHammer,
+    carpentersChisel
 ]);
 
 removeAndHide([
@@ -180,7 +184,6 @@ remove([
     <minecraft:iron_chestplate>,
     <minecraft:iron_helmet>,
     <minecraft:iron_hoe>,
-    <minecraft:iron_horse_armor>,
     <minecraft:iron_ingot>,
     <minecraft:iron_leggings>,
     <minecraft:iron_ore>,
@@ -238,7 +241,6 @@ remove([
     <minecraft:tnt>,
     <minecraft:tnt_minecart>,
     <minecraft:trapped_chest>,
-    <minecraft:tripwire_hook>,
     <minecraft:wheat>,
     <minecraft:wooden_axe>,
     <minecraft:wooden_door>,
@@ -302,11 +304,12 @@ addShaped(carpentersBed, [
     [carpentersBlocks, carpentersBlocks, carpentersBlocks]
 ]);
 
-addShapeless(stick *2, [lumber, axe.transformDamage()]);
+addShaped(horseArmor, [
+    [null, cloth, hammer.transformDamage()],
+    [ironSheet, ironSheet, ironSheet],
+    [null, chisel.transformDamage(), null]
+]);
+
+addShapeless(stick * 2, [lumber, axe.transformDamage()]);
 addShapeless(book, [paper, paper, paper, leather]);
 addShapeless(carpentersBlocks * 3, [saw.transformDamage(), lumber, lumber, lumber]);
-
-/*
-    Special stuff
-*/
-

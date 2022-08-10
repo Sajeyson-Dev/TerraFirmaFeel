@@ -1,0 +1,182 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "modpack:mainmenu/title.png",
+            "posX" : -208,
+            "posY" : 40,
+            "width" : 417,
+            "height" : 71,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : 3,
+            "posY" : -15,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : 3,
+            "posY" : 8,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : 3,
+            "posY" : 31,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+
+        "mods":
+        {
+            "text" : "Mods",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : -101,
+            "posY" : -15,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+
+        "screenshots":
+        {
+            "text" : "Screenshots",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : -101,
+            "posY" : 8,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "openFolder",
+                "folderName" : "screenshots"
+            }
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "hoverTextColor" : 16164437,
+            "texture" : "modpack:mainmenu/button.png",
+            "posX" : -101,
+            "posY" : 31,
+            "width" : 98,
+            "height" : 20,
+            "alignment" : "right_center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        }/*,
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }*/
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : -197,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+
+        "fml":
+        {
+            "text" : "",
+            "posX" : 2,
+            "posY" : -46,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+
+        "snacks":
+        {
+            "text" : "\n     \n     \n     ",
+            "hoverText" : "\n\n\n\n\nGot your snacks!",
+            "posX" : -170,
+            "posY" : 50,
+            "color" : -1,
+            "hoverColor" : 16164437,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "other":
+    {   
+        "splash-text":
+        {
+            "posX" : 205,
+            "posY" : 100,
+            "color" : 16164437,
+            "alignment" : "top_center",
+            "texts" : "file:modpack:mainmenu/splashes.txt"
+        },
+        
+        "background":
+        {
+            "image" : "modpack:mainmenu/background.png",
+            "mode" : "fill"
+        }
+    }
+}

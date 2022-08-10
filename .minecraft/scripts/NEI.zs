@@ -1,6 +1,10 @@
 import minetweaker.item.IItemStack;
 import mods.nei.NEI;
 
+/*
+    Author: Sajeyson
+*/
+
 function hide(items as IItemStack[]) as void {
     for item in items {
         NEI.hide(item);
@@ -130,7 +134,6 @@ hide([
     <minecraft:iron_chestplate>,
     <minecraft:iron_helmet>,
     <minecraft:iron_hoe>,
-    <minecraft:iron_horse_armor>,
     <minecraft:iron_ingot>,
     <minecraft:iron_leggings>,
     <minecraft:iron_ore>,
@@ -172,7 +175,6 @@ hide([
     <minecraft:nether_wart>,
     <minecraft:netherbrick>,
     <minecraft:netherrack>,
-    <minecraft:obsidian>,
     <minecraft:packed_ice>,
     <minecraft:poisonous_potato>,
     <minecraft:porkchop>,
@@ -209,7 +211,6 @@ hide([
     <minecraft:sapling:*>,
     <minecraft:shears>,
     <minecraft:skull:*>,
-    <minecraft:slime_ball>,
     <minecraft:snowball>,
     <minecraft:soul_sand>,
     <minecraft:spawn_egg:*>,
@@ -235,7 +236,6 @@ hide([
     <minecraft:tnt>,
     <minecraft:tnt_minecart>,
     <minecraft:trapped_chest>,
-    <minecraft:tripwire_hook>,
     <minecraft:water>,
     <minecraft:water_bucket>,
     <minecraft:web>,

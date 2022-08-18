@@ -17,6 +17,7 @@ Original TerraFirmaCraft gameplay with tweaks and fixes!
 - Dynamic Surroundings
 - EnderCore
 - FastCraft
+- FPS Reducer
 - FTBLib
 - FTBUtilities
 - Inventory Tweaks

@@ -18,6 +18,7 @@ global chiselHead                           as IItemStack = <terrafirmacraft:ite
 global boneMeal                             as IItemStack = <terrafirmacraft:item.dyePowder:15>;
 global inkSac                               as IItemStack = <terrafirmacraft:item.dyePowder>;
 global cocoaBeans                           as IItemStack = <terrafirmacraft:item.dyePowder:3>;
+global sugarCane                            as IItemStack = <terrafirmacraft:item.Reeds>;
 
 global log                                  as IOreDictEntry = <ore:logWood>;
 global lumber                               as IOreDictEntry = <ore:woodLumber>;
@@ -332,6 +333,7 @@ addShaped(horseArmor, [
 addShapeless(stick * 2, [lumber, axe.transformDamage()]);
 addShapeless(book, [paper, paper, paper, leather]);
 addShapeless(carpentersBlocks * 3, [saw.transformDamage(), lumber, lumber, lumber]);
+addShapeless(paper *3, [sugarCane, sugarCane, sugarCane]);
 
 /*
     Dyes

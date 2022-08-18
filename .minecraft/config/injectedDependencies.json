@@ -72,6 +72,10 @@
       },
       {
         "type": "before",
+        "target": "FpsReducer"
+      },
+      {
+        "type": "before",
         "target": "Waila"
       },
       {

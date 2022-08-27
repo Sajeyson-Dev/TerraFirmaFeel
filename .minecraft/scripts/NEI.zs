@@ -252,5 +252,6 @@ hide([
     <minecraft:wool:*>,
     <minecraft:written_book>,
     <CarpentersBlocks:blockCarpentersBed>,
-    <CarpentersBlocks:blockCarpentersDoor>
+    <CarpentersBlocks:blockCarpentersDoor>,
+    <CarpentersBlocks:itemCarpentersTile>
 ]);

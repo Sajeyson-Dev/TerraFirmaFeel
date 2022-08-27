@@ -19,6 +19,10 @@ global boneMeal                             as IItemStack = <terrafirmacraft:ite
 global inkSac                               as IItemStack = <terrafirmacraft:item.dyePowder>;
 global cocoaBeans                           as IItemStack = <terrafirmacraft:item.dyePowder:3>;
 global sugarCane                            as IItemStack = <terrafirmacraft:item.Reeds>;
+global ironPlate                            as IItemStack = <minecraft:heavy_weighted_pressure_plate>;
+
+global ironIngot                            as IItemStack = <terrafirmacraft:item.Wrought Iron Ingot>;
+global redstone                             as IItemStack = <minecraft:redstone>;
 
 global log                                  as IOreDictEntry = <ore:logWood>;
 global lumber                               as IOreDictEntry = <ore:woodLumber>;
@@ -50,6 +54,10 @@ global carpentersBed                        as IItemStack = <CarpentersBlocks:it
 global carpentersHammer                     as IItemStack = <CarpentersBlocks:itemCarpentersHammer>;
 global carpentersChisel                     as IItemStack = <CarpentersBlocks:itemCarpentersChisel>;
 global horseArmor                           as IItemStack = <minecraft:iron_horse_armor>;
+global detectorRail                         as IItemStack = <minecraft:detector_rail>;
+global pressurePlate                        as IItemStack = <minecraft:wooden_pressure_plate>;
+global button                               as IItemStack = <terrafirmacraft:ButtonWood>;
+global carpentersButton                     as IItemStack = <CarpentersBlocks:blockCarpentersButton>;
 
 global saw                                  as IOreDictEntry = <ore:itemSaw>;
 global axe                                  as IOreDictEntry = <ore:itemAxe>;
@@ -95,11 +103,11 @@ remove([
     carpentersBlocks,
     carpentersBed,
     carpentersHammer,
-    carpentersChisel
-]);
-
-removeAndHide([
-    <CarpentersBlocks:itemCarpentersTile>
+    carpentersChisel,
+    detectorRail,
+    pressurePlate,
+    button,
+    carpentersButton
 ]);
 
 recipes.removeShaped(<minecraft:carpet:*>);
@@ -269,7 +277,8 @@ remove([
     <minecraft:wooden_shovel>,
     <minecraft:wooden_sword>,
     <minecraft:wool:*>,
-    <minecraft:written_book>
+    <minecraft:written_book>,
+    <CarpentersBlocks:itemCarpentersTile>
 ]);
 
 /*
@@ -330,10 +339,23 @@ addShaped(horseArmor, [
     [null, chisel.transformDamage(), null]
 ]);
 
+addShaped(detectorRail * 6, [
+    [ironIngot, stick, ironIngot],
+    [ironIngot, ironPlate, ironIngot],
+    [ironIngot, stick, ironIngot]
+]);
+
+addShaped(pressurePlate, [
+    [lumber, lumber]
+]);
+
 addShapeless(stick * 2, [lumber, axe.transformDamage()]);
+addShapeless(stick * 2, [lumber, saw.transformDamage()]);
 addShapeless(book, [paper, paper, paper, leather]);
 addShapeless(carpentersBlocks * 3, [saw.transformDamage(), lumber, lumber, lumber]);
-addShapeless(paper *3, [sugarCane, sugarCane, sugarCane]);
+addShapeless(paper * 3, [sugarCane, sugarCane, sugarCane]);
+addShapeless(button, [lumber]);
+addShapeless(carpentersButton * 3, [carpentersBlocks]);
 
 /*
     Dyes
